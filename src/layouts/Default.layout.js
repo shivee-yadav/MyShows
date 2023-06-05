@@ -1,8 +1,15 @@
 import React from "react";
 
-const DefaultLayout = () => {
+
+const DefaultLayout = (props) => {
     return (
-        <h1 className="text-xl">Default Layout Page</h1>
+
+        <div style={{  padding: '10px' }}>
+
+            <h1> Default Layout Page </h1>
+            { props.children }
+        </div>
+
     );
 };
 

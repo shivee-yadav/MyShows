@@ -1,30 +1,37 @@
 import { Route, Routes } from "react-router-dom";
 
-function Name() {
-  return <h1>Welcom to Home Page!!!</h1>
-}
+//HOC
+import DefaultHOC from "./HOC/Default.HOC";
 
-function Name2() {
-  return <h1>Welcom to Movie Page!!!</h1>
-}
+//Component
+import Temp from "./components/temp";
+
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" exact Component={Name} />
-      <Route path="/movie" exact Component={Name2}/>
-    </Routes>//fragments;to return;empty tags
-    );
-  }
-  
-  export default App;
+    <>
+    <DefaultHOC path="/" exact Component={ Temp } />
+    </>
+  );
+}
+
+export default App;
 
 //exact -> to show the exact page where we want to render
 //SPREAD operator:for adding new parameters without creating another object
 
 
+// function Name() {
+//   return <h1>Welcom to Home Page!!!</h1>
+// }
+
+// function Name2() {
+//   return <h1>Welcom to Movie Page!!!</h1>
+// }
 
 
+{/* <Route path="/movie" exact Component={Name2}/> */ }
+  //fragments;to return;empty tags
 
 
   // <div className="App p-10">
