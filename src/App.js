@@ -6,16 +6,16 @@ import DefaultHOC from "./HOC/Default.HOC";
 //Component
 import Temp from "./components/temp";
 
-
 function App() {
   return (
-    <>
-    <DefaultHOC path="/" exact Component={ Temp } />
-    </>
+    <div className="App">
+      <DefaultHOC path="/" component={<Temp />} />
+    </div>
   );
 }
 
 export default App;
+
 
 //exact -> to show the exact page where we want to render
 //SPREAD operator:for adding new parameters without creating another object
