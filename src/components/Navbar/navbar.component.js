@@ -1,16 +1,19 @@
 import React from "react";
 
-import { BiChevronRight } from "react-icons/bi";
+import { BiChevronRight, BiSearch } from "react-icons/bi";
 
 const NavSm = () => {
     return(
         <>
-            <div>
+            <div className="text-white flex items-center justify-between" >
                 <div>
-                    <h3>IT ALL STARTS HERE!</h3>
-                    <span>
+                    <h3 className="text-xl font-bold">IT ALL STARTS HERE!</h3>
+                    <span className="text-gray-400 text-xs flex items-center">
                         Bhubaneshwar <BiChevronRight/>
                     </span>
+                </div>
+                <div className="w-8 h-8">
+                    <BiSearch className="w-full h-full"/>
                 </div>
             </div>
         </>
@@ -22,7 +25,7 @@ const NavLg = () => { };
 const Navbar = () => {
     return (
         <>
-            <nav>
+            <nav className="bg-navCol-700 px-4 py-2">
                 <div className="md:hidden">{
                 //mobile screen
                     <NavSm />
