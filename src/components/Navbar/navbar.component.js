@@ -76,6 +76,7 @@ const Navbar = () => {
       <nav className="bg-navCol-700 px-4 py-2">
         <div className="md:hidden">
           {
+            //md:hidden -> it'll be hidden for screen equal to larger than medium
             //mobile screen
             <NavSm />
           }
@@ -101,4 +102,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-//md:hidden -> it'll be hidden for screen equal to larger than medium
