@@ -7,7 +7,7 @@ const DefaultLayout = (props) => {
     <div >
       <Navbar />
       <HeroCarousel />
-      <h1>Default Layout Page</h1>
+      
       {props.children}
     </div>
   );
