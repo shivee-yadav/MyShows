@@ -1,6 +1,8 @@
 import React from "react";
 import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCard.component";
 import { Premier } from "../components/Premier/Premier.component";
+import PosterSlider from "../components/PosterSlider/PosterSlider.component";
+import PremierImages from "../config/TempPosters.config";
 
 const HomePage = () => {
     return(
@@ -20,7 +22,7 @@ const HomePage = () => {
                 className="w-full h-full  px-3"
                 />
             </div>
-            <Premier />
+            <PosterSlider images={PremierImages} title="Premieres" subtitle="Brand new releases every Friday" />
             </div>
         </div>
         </div>
