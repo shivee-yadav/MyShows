@@ -6,7 +6,7 @@ const EntertainmentCard = (props) => {
         <>
         <div className="w-full h-30 px-2 py-2">
             <img 
-                className="w-full h-full rounded-xl"
+                className="w-full h-full rounded-xl "
                 src={props.src}
                 alt="Entertainment Image"
             />
@@ -35,7 +35,32 @@ const EntertainmentCardSlider = () => {
         autoplay: false,
         slidesToShow: 5,
         slidesToScroll: 2,
-        initialSlide:0
+        initialSlide:0,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+          ],
     }
 
     return(

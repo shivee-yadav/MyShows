@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
       <div className="flex flex-col gap-10">
-        <div className="container mx-auto px-32">
+        <div className="container mx-auto px-32 md: w-full h-full p-2">
           <h1 className="text-2xl font-bold text-gray-800">
             {" "}
             The best of Entertainment
@@ -33,6 +33,15 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <div className="container mx-auto px-32">
+        <PosterSlider
+        images={PremierImages}
+        title="Online Streaming Events"
+        isDark={false}
+        />
+      </div>
+
 
       <div className="container mx-auto px-32">
         <PosterSlider
