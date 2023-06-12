@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
+      
       colors: {
         purpy: {
           50: "#f9e4ff",

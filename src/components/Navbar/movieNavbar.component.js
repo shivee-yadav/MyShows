@@ -62,7 +62,7 @@ const NavLg = () => {
 const MovieNavbar = () => {
   return (
     <>
-      <nav className="bg-navCol-700 px-4 py-2 sm: bg-white">
+      <nav className="bg-white   lg:bg-navCol-700 px-4 py-2">
         <div className="md:hidden">
           {
             //md:hidden -> it'll be hidden for screen equal to larger than medium
