@@ -1,17 +1,19 @@
 import React from "react";
 
-import { BiChevronDown, BiChevronRight, BiMenu, BiSearch, BiChevronLeft, BiShareAlt } from "react-icons/bi";
+import { BiChevronDown, BiChevronRight, BiMenu, BiSearch, BiChevronLeft } from "react-icons/bi";
+import { CiShare2 } from  "react-icons/ci";
+
 
 const NavSm = () => {
   return (
     <>
-      <div className="text-white flex items-center justify-between">
+      <div className="text-black flex items-center justify-between ">
         <div>
-          <h3 className="text-xl font-bold">IT ALL STARTS HERE!</h3>
+          <h2 className=" text-s  font-sans font-medium">IT ALL STARTS HERE!</h2>
           
         </div>
-        <div className="w-8 h-8">
-          <BiShareAlt className="w-full h-full" />
+        <div className="w-8 h-8 ">
+          <CiShare2 className=" w-full h-full" />
         </div>
       </div>
     </>
@@ -60,7 +62,7 @@ const NavLg = () => {
 const MovieNavbar = () => {
   return (
     <>
-      <nav className="bg-navCol-700 px-4 py-2">
+      <nav className="bg-navCol-700 px-4 py-2 sm: bg-white">
         <div className="md:hidden">
           {
             //md:hidden -> it'll be hidden for screen equal to larger than medium
