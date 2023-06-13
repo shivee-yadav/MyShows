@@ -1,5 +1,7 @@
 import React from "react";
 import MovieHero from "../components/MovieHero/MovieHero.component";
+import { BiCameraMovie } from "react-icons/bi";
+
 const Movie = () => {
     return (
         <>
@@ -14,6 +16,24 @@ const Movie = () => {
             <div className="my-8">
                 <hr />
             </div>
+
+            <div>
+                <h1 className="text-gray-900 text-2xl font-bold py-3">Top offers for you</h1>
+                <div className="flex items-start gap-2 bg-yellow-100 border-yellow-400 border-2 border-dashed rounded-md p-4 w-96">
+
+                <div className="w-8 h-8">
+                <BiCameraMovie className="w-full h-full" />
+                </div >
+
+                <div className="flex flex-col items-start">
+                    <h3 className="text-gray-700 text-lg font-semibold">10% Off on movies munchies!</h3>
+                    <p className="text-gray-600 text-m">Tap to view details</p>
+                </div>
+                </div>
+            </div>
+
+
+
         </div>
         </>
     )

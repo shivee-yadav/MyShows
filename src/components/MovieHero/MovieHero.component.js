@@ -35,6 +35,12 @@ const MovieHero = () => {
 
         </div>
 
+        <div className="my-12 container absolute z-30 top-10 px-12 lg:w-2/3 lg:ml-96 flex flex-col">
+            <div className=" items-start gap-3">
+                <h1 className="text-white font-bold text-4xl flex-wrap">Transformers:Rise of the Beasts</h1>
+            </div>
+        </div>
+
         {/* <div className="box-content w-64 h-96 absolute z-30 left-96 right-0 top-10 place-self-center">
             <div className="text-white text-5xl font-bold flex-wrap">
                <h1>Transformers:Rise of the Beasts</h1>
