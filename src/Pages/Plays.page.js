@@ -70,10 +70,12 @@ return (
 
        <div className="lg:w-1/4">
         <h2 className="text-2xl font-bold mb-4">Filters</h2>
-        <div>
-        <PlaysFilter title="Date" tags={["Today", "Tomorrow", "This Weekend"]}/>
-        <PlaysFilter title="Language" tags={["Tamil", "Kannada"]}/>
-        <PlaysFilter title="Categories" tags={["Theatre"]}/>
+        <div className="grid gap-y-4">
+            <div className="bg-gray-100 w-80 h-auto p-2"><PlaysFilter title="Date" tags={["Today", "Tomorrow", "This Weekend"]}/></div>
+            <div className="bg-gray-100 w-80 h-auto p-2"><PlaysFilter title="Language" tags={["Tamil", "Kannada"]}/></div>
+            <div className="bg-gray-100 w-80 h-auto p-2"><PlaysFilter title="Categories" tags={["Theatre"]}/></div>
+        
+        
         </div>
        </div>
    </div>
