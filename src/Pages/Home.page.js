@@ -17,7 +17,7 @@ useEffect(() => {
   requestPopularMovies();
 },[]);
 
-console.log({popularMovies});
+//console.log({popularMovies});
 
 const [topRatedMovies , setTopRatedMovies] = useState([]);
 
@@ -29,7 +29,7 @@ useEffect(() => {
   requestTopRatedMovies();
 }, []);
 
-console.log({topRatedMovies});
+//console.log({topRatedMovies});
 
 
 const [upcomingMovies , setUpcomingMovies] = useState([]);
@@ -42,7 +42,7 @@ useEffect(() => {
   requestUpcomingMovies();
 }, []);
 
-console.log({upcomingMovies});
+//console.log({upcomingMovies});
 
   return (
     <>
