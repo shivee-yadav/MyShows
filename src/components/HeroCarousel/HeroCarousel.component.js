@@ -16,6 +16,7 @@ const HeroCarousel = () => {
   useEffect(() => {
     const requestNowPlayingMovies = async() => {
       const getImages = await tmdb.get("/movie/now_playing");
+      console.log(getImages)
       setImages(getImages.data.results);
     };
 
@@ -28,7 +29,6 @@ const HeroCarousel = () => {
   const settingsLg = {
     
     autoplay: true,
-    dots: true,
     centerMode: true,
     centerPaddinng: "300px",
     infinite: true,

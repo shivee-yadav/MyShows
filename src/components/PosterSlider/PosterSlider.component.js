@@ -7,7 +7,7 @@ import { posterCarouselSettings } from "../../config/PosterCarousel.config";
 const PosterSlider = (props) => {
     return (
         <>
-         <div className="flex flex-col items-start py-4 pl-4">
+         <div className="flex flex-col items-start py-4 pl-4 ">
         <h3 className={`text-2xl font-bold ${
                 props.isDark ? "text-white" : "text-gray-700"
             }`}>{props.title}</h3>
