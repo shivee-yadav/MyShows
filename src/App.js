@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
-import axios from "axios";
+//import axios from "axios";
 //it globally renders the data, we don't need to go to all pages and render data seperately
 
 //HOC
@@ -16,9 +16,9 @@ import Plays from "./Pages/Plays.page";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-axios.defaults.baseURL = "https://api.themoviedb.org/3";
-axios.defaults.params = {};//we dont have our own params
-axios.defaults.params["api key"] = process.env.REACT_APP_API_KEY;//we are using tmdb's api 
+// axios.defaults.baseURL = "https://api.themoviedb.org/3";
+// axios.defaults.params = {};//we dont have our own params
+// axios.defaults.params["api key"] = process.env.REACT_APP_API_KEY;//we are using tmdb's api 
 
 function App() {
   return (
