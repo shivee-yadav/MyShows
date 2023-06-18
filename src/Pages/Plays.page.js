@@ -1,7 +1,23 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import tmdb from "../api/tmdb";
 import Poster from "../components/Poster/Poster.component.js";
 import PlaysFilter from "../components/PlaysFilters/PlaysFilters.component.js";
+import PosterSlider from "../components/PosterSlider/PosterSlider.component.js";
 const Plays = () => {
+
+   const [nowPlaying , setNowPlaying] = useState([]);
+
+   useEffect( () => {
+      const requestNowPlaying = async () => {
+         const getNowPlaying = await tmdb.get("/movie/now_playing");
+         setNowPlaying(getNowPlaying.data.results);
+      }
+      requestNowPlaying();
+   },[]);
+
+   console.log(nowPlaying);
+
+
 return (
 <>
 <div className="container mx-auto px-4 py-16">
@@ -9,9 +25,15 @@ return (
       <div className="lg:w-8/12">
       <h2 className="text-2xl font-bold mb-4">Plays in Bhubaneswar</h2>
       <div className="flex flex-wrap">
-         <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
+      <div className="container mx-auto">
+        <PosterSlider
+        images={nowPlaying}
+        isDark={false}
+        />
+      </div>
+         {/* <div className="w-1/2 md:w-1/3 my-3 lg:w-1/4">
             <Poster
-               src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxOCBKdW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00357799-vfegxnntfv-portrait.jpg"
+               src={nowPlaying}
                title="Chakravyuh featuring Nitish Bharadwaj as..."
                subtitle="Tamil ₹300"
                />
@@ -64,7 +86,7 @@ return (
                title="Tansen"
                subtitle="Tamil ₹300"
                />
-         </div>
+         </div> */}
       </div>
       </div>
 
